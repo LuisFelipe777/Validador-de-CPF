@@ -55,10 +55,8 @@ def valida_cpf():
         cpf_str.append(str(i))
     cpf_gerado = "".join(cpf_str)
 
-    if cpf_gerado == cpf_digitado_usuario:
-        print(f"CPF: {cpf_digitado_usuario} válido")
-    else:
-        print(f"CPF: {cpf_digitado_usuario} inválido")
+    print(f"CPF: {cpf_digitado_usuario} válido") if cpf_gerado == cpf_digitado_usuario else print(
+        f"CPF: {cpf_digitado_usuario} inválido")
 
 
 separa_digitos()
